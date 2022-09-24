@@ -1,6 +1,5 @@
 package ua.nato.himars;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -22,15 +21,11 @@ public class AimTraining {
         frame.setResizable(true);
         frame.setBackground(Color.WHITE);
 
-
-
-        //Encoder button
         JButton button = new JButton("");
         button.setBounds(15,10,50,50);
         button.setBackground(Color.BLACK);
         button.setForeground(Color.BLACK);
         button.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 Random random = new Random();
@@ -38,10 +33,8 @@ public class AimTraining {
             }
         });
 
-
         //add
         frame.setVisible(true);
-
         frame.add(button);
     }
 
